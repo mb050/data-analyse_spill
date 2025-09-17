@@ -100,6 +100,6 @@ def update_graph(xaxis_name, yaxis_name, year_value, toggle_all, sub_option):
 
 # Run the app
 if __name__ == '__main__':
-    app.run(debug=True, port=8057)
-    print(f'go to http://127.0.0.1:8057/{default_port}')
-    # pass
+    app.run(debug=True, port=default_port)
+    print(f'go to http://127.0.0.1:{default_port}/')
+
