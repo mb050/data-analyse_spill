@@ -1,10 +1,9 @@
-from dash import Dash, dcc, callback, Output, Input, callback_context
+from dash import Dash, callback, Output, Input
 import pandas as pd
-import numpy as np
 import json as js
 
+from classes.utility import Utility
 from layout import get_layout
-from utility import Utility
 
 default_port = 8057
 
@@ -21,20 +20,14 @@ df.loc[:, "User_Score"] *= 10
 
 app = Dash()
 opt = list(df.columns)
-
 util = Utility(df, js_file)
 
 reduced_column_list = util.reduced_column_list
 sub_option_dict = util.sub_option_dict
-
 special_cases = util.special_cases
-
 year_list = util.year_list
 
-year_column = df['Year_of_Release']
 app.layout = get_layout(opt, year_list)
-
-function_dict = util.function_dict
 
 @app.callback(Output('y-axis_column', 'style'),
               Output('y-axis_column', 'options'),
@@ -80,7 +73,6 @@ def sub_container_display(toggle_all, sub_display, clicks=0):
     else:
         return [1], [], clicks
 
-
 @callback(
     Output('scatter-graph', 'figure'),
     Input('x-axis_column', 'value'),
@@ -92,14 +84,12 @@ def update_graph(xaxis_name, yaxis_name, year_value, toggle_all, sub_option):
     if yaxis_name is None:
         return
     
-    sub_option = util.effective_sub_option(yaxis_name, toggle_all, sub_option)
-    D = util.get_year_df(df, year_value)
-    arg = [D, xaxis_name, yaxis_name, sub_option]
+    arg_list = [df, xaxis_name, yaxis_name, year_value, toggle_all, sub_option]
+    return util.graph_control(*arg_list)
     
-    return function_dict[xaxis_name](*arg)
 
 # Run the app
 if __name__ == '__main__':
     app.run(debug=True, port=default_port)
     print(f'go to http://127.0.0.1:{default_port}/')
-
+    

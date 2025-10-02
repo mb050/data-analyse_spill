@@ -1,0 +1,376 @@
+{
+	"color_map": [ 
+		"#FD3216",
+		"#008EFA",
+		"#109618",
+		"#FEAF16",
+		"#AA0DFE",
+		"#D62728",
+		"#222A2A",
+		"#17FF0A",
+		"#1FDAFF",
+		"#FF9900",
+		"#24D900",
+		"#FF14FC",
+		"#4314FF",
+		"#D40675",
+		"#E12BFC",
+		"#0004FF"
+	],
+	
+	"main_option": {
+		"Platform": [
+			"Year_of_Release", 
+			"Genre", 
+			"Publisher", 
+			"NA_Sales", 
+			"EU_Sales", 
+			"JP_Sales", 
+			"Other_Sales", 
+			"Global_Sales", 
+			"Critic_Score", 
+			"Critic_Count", 
+			"User_Score", 
+			"User_Count", 
+			"Developer", 
+			"Rating"
+		],
+
+		"Year_of_Release": [
+			"number_of_games",
+			"Platform", 
+			"Genre", 
+			"Publisher", 
+			"NA_Sales", 
+			"EU_Sales", 
+			"JP_Sales", 
+			"Other_Sales", 
+			"Global_Sales", 
+			"Score", 
+			"Review_Count", 
+			"Developer", 
+			"Rating"
+		],
+
+		"Genre": [
+			"Platform", 
+			"Year_of_Release", 
+			"Publisher", 
+			"NA_Sales", 
+			"EU_Sales", 
+			"JP_Sales", 
+			"Other_Sales", 
+			"Global_Sales", 
+			"Score", 
+			"Review_Count", 
+			"Developer", 
+			"Rating"
+		],
+
+		"Publisher": [
+			"Platform", 
+			"Year_of_Release", 
+			"Genre", 
+			"Sales", 
+			"Score", 
+			"Review_Count", 
+			"Rating"
+		], 
+
+		"NA_Sales": [
+			"Platform", 
+			"Year_of_Release", 
+			"Genre", 
+			"Publisher", 
+			"Critic_Score", 
+			"User_Score", 
+			"Developer", 
+			"Rating"
+		], 
+
+		"EU_Sales": [
+			"Platform", 
+			"Year_of_Release", 
+			"Genre", 
+			"Publisher", 
+			"Critic_Score", 
+			"User_Score", 
+			"Developer", 
+			"Rating"
+		],
+
+		"JP_Sales": [
+			"Platform", 
+			"Year_of_Release", 
+			"Genre", 
+			"Publisher", 
+			"Critic_Score", 
+			"User_Score", 
+			"Developer", 
+			"Rating"
+		],
+
+		"Other_Sales": [
+			"Platform", 
+			"Year_of_Release", 
+			"Genre", 
+			"Publisher", 
+			"Critic_Score", 
+			"User_Score", 
+			"Developer", 
+			"Rating"
+		], 
+
+		"Global_Sales": [
+			"Platform", 
+			"Year_of_Release", 
+			"Genre", 
+			"Publisher", 
+			"Critic_Score", 
+			"User_Score", 
+			"Developer", 
+			"Rating"
+		],
+
+		"Critic_Score": [
+			"Platform",
+			"Year_of_Release", 
+			"Genre", 
+			"Publisher", 
+			"NA_Sales", 
+			"EU_Sales", 
+			"JP_Sales", 
+			"Other_Sales", 
+			"Global_Sales",
+			"Critic_Count", 
+			"User_Score", 
+			"Developer", 
+			"Rating"
+		],
+			
+		"Critic_Count": [
+			"Platform",
+			"Year_of_Release", 
+			"Genre", 
+			"Publisher", 
+			"NA_Sales", 
+			"EU_Sales", 
+			"JP_Sales", 
+			"Other_Sales", 
+			"Global_Sales",
+			"Score", 
+			"Developer", 
+			"Rating"
+		],
+			
+		"User_Score": [
+			"Platform",
+			"Year_of_Release", 
+			"Genre", 
+			"Publisher", 
+			"NA_Sales", 
+			"EU_Sales", 
+			"JP_Sales", 
+			"Other_Sales", 
+			"Global_Sales",
+			"Critic_Score", 
+			"User_Count", 
+			"Developer", 
+			"Rating"
+		],
+		
+		"User_Count": [
+			"Platform",
+			"Year_of_Release", 
+			"Genre", 
+			"Publisher", 
+			"NA_Sales", 
+			"EU_Sales", 
+			"JP_Sales", 
+			"Other_Sales", 
+			"Global_Sales",
+			"Score", 
+			"Developer", 
+			"Rating"
+		],
+		
+		"Developer": [
+			"Platform", 
+			"Year_of_Release", 
+			"Genre", 
+			"Sales", 
+			"Score", 
+			"Review_Count", 
+			"Rating"
+		],
+
+		"Rating": [
+			"Platform", 
+			"Year_of_Release", 
+			"Genre",
+			"Publisher", 
+			"NA_Sales", 
+			"EU_Sales", 
+			"JP_Sales", 
+			"Other_Sales", 
+			"Global_Sales", 
+			"Score", 
+			"Review_Count", 
+			"Developer"
+		]
+	},
+	
+	"sub_options": [
+		"Platform",
+		"Genre",
+		"Publisher",
+		"Developer", 
+		"Rating"
+	],
+	
+	"fields": {
+		"sales": [
+			"NA_Sales", 
+			"EU_Sales", 
+			"JP_Sales", 
+			"Other_Sales", 
+			"Global_Sales"
+		],
+		
+		"review_count": [
+			"User_Count", 
+			"Critic_Count"
+		],
+		
+		"score": [
+			"User_Score", 
+			"Critic_Score"
+		]
+	},
+	
+	
+	"sub_option_exceptions": {
+		"Platform": { 
+			"Year_of_Release": "Platform",
+			"NA_Sales": "Platform",
+			"EU_Sales": "Platform",
+			"JP_Sales": "Platform",
+			"Other_Sales": "Platform",
+			"Global_Sales": "Platform",
+			"Critic_Count": "Platform",
+			"User_Count": "Platform",
+			"Critic_Score": "Platform",
+			"User_Score": "Platform"
+		},
+		"Year_of_Release": {
+			"Global_Sales": [
+				"NA_Sales", 
+				"EU_Sales", 
+				"JP_Sales", 
+				"Other_Sales"
+			],
+			"Review_Count": [
+				"Critic_Count", 
+				"User_Count"
+			]
+		},
+		"Genre": {
+			"Year_of_Release": "Genre",
+			"Review_Count": [
+				"Critic_Count", 
+				"User_Count"
+			]
+		},
+		"Publisher": {
+			"Platform": "Publisher",
+			"Genre": "Publisher",
+			"Rating": "Publisher"
+		},
+		"Developer": {
+			"Platform": "Publisher",
+			"Genre": "Publisher",
+			"Rating": "Publisher"
+		},
+		"Rating": {
+			"Year_of_Release": "Rating", 
+			"Score": "Rating",
+			"Review_Count": "Rating"
+		}
+	},
+	
+	"shared_functions": {
+		"platform": [
+			"Platform"
+		], 
+		
+		"year": [
+			"Year_of_Release"
+		],
+		
+		"genre": [
+			"Genre"
+		], 
+		
+		"rating": [
+			"Rating"
+		],
+			
+		"sale": [
+			"NA_Sales",
+			"EU_Sales",
+			"JP_Sales",
+			"Other_Sales",
+			"Global_Sales"
+		],
+		
+		"publisher": [
+			"Publisher",
+			"Developer"
+		],
+		
+		"score": [
+			"Critic_Score",
+			"User_Score"
+		],
+			
+		"count": [
+			"Critic_Count",
+			"User_Count"
+		]
+	},
+	
+	"class_idx": {
+		"0": "platform",
+		"1": "year",
+		"2": "genre",
+		"3": "rating",
+		"4": "sale",
+		"5": "publisher",
+		"6": "score",
+		"7": "count"
+	},
+	
+	"instance_path": {
+		"Platform": ["10", "20", "30", "40", "51", "60", "70"],		
+		"Year_of_Release": ["00", "21", "31", "41", "50", "60", "72"],
+		"Genre": ["01", "10", "30", "40", "51", "60", "70"],
+		"Publisher": ["01", "10", "22", "32", "42", "60", "70"],
+		"Developer": ["01", "10", "22", "32", "42", "60", "70"],
+		"Rating": ["01", "10", "22", "40", "51", "60", "70"],
+		"NA_Sales": ["02", "11", "25", "35", "61", "73"],
+		"EU_Sales": ["02", "11", "25", "35", "61", "73"],
+		"JP_Sales": ["02", "11", "25", "35", "61", "73"],
+		"Other_Sales": ["02", "11", "25", "35", "61", "73"],
+		"Global_Sales": ["02", "11", "25", "35", "61", "73"],
+		"Critic_Score": ["02", "43", "63"],
+		"Critic_Count": ["02", "62"],
+		"User_Score": ["02", "43", "63"],
+		"User_Count": ["02", "62"],
+		"Review_Count": ["12", "24", "34", "54"],
+		"Score": ["13", "23", "33", "53", "71"],
+		"number_of_games": ["14"],
+		"Sales": ["52"]
+	}
+}
+	
+
